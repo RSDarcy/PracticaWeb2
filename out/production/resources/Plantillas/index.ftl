@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <head>
-      <link rel="stylesheet" type="text/css" href="css.css">
+
     <title>Estudiantes</title>
 
   </head>
@@ -19,7 +19,7 @@
 
         <div class="box">
             <#if tamano>
-                <table class="my-list">
+                <table class="table table-dark">
                     <thead>
                     <tr>
                         <th>Matricula</th>
@@ -33,7 +33,7 @@
                         <#assign contador = 0>
 
                         <#list estudiantes as Estudiante>
-                        <tr class="my-list">
+                        <tr class="">
                             <td>${Estudiante.matricula?string["0"]}</td>
                             <td>${Estudiante.nombre}</td>
                             <td>${Estudiante.apellido}</td>
